@@ -97,7 +97,7 @@ const HomePage = () => {
                     }
                     {
                         (selector === 'especie' && !especie ) && listaMascotas.map((mascota) => {
-                            return <div key={mascota.key} className="card col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
+                            return <div key={mascota.key} className="card p-0 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
                                 <img src={mascota.foto} className="card-img-top h-50" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{mascota.nombre}</h5>
