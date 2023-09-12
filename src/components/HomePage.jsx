@@ -79,11 +79,11 @@ const HomePage = () => {
                     </div>
                 }
             </div>
-            <div className="container p-3">
+            <div className="container mt-3">
                 <div className="row gap-3">
                     {
                         selector === 'especie' && listaMascotas.map((mascota) => {
-                            return mascota.especie === especie ? <div key={mascota.key} className="card col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
+                            return mascota.especie === especie ? <div key={mascota.key} className="card p-0 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
                                 <img src={mascota.foto} className="card-img-top h-50" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{mascota.nombre}</h5>
@@ -111,7 +111,7 @@ const HomePage = () => {
                     }
                     {
                         (selector === 'raza' && raza === "" ) && listaMascotas.map((mascota) => {
-                            return <div key={mascota.key} className="card col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
+                            return <div key={mascota.key} className="card p-0 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
                                 <img src={mascota.foto} className="card-img-top h-50" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{mascota.nombre}</h5>
@@ -125,7 +125,7 @@ const HomePage = () => {
                     }
                     {
                         (selector === 'raza' && raza !== "" ) && listaMascotas.map((mascota) => {
-                            return mascota.raza.includes( raza ) ? <div key={mascota.key} className="card col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
+                            return mascota.raza.includes( raza ) ? <div key={mascota.key} className="card p-0 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
                                 <img src={mascota.foto} className="card-img-top h-50" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{mascota.nombre}</h5>
