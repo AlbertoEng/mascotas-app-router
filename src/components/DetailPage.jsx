@@ -21,7 +21,7 @@ const DetailPage = () => {
     return (
         <>
             <div className="container p-3">
-                <img src={mascota.foto} alt="" className='rounded shadow' style={{ width: '500px'}} />
+                <img src={mascota.foto} className="img-fluid rounded shadow" style={{ width: '500px'}}  alt="..." />
                 <h2 className='mt-5'>{mascota.nombre?.toUpperCase()}</h2>
                 <h3 className='mt-4'>genero: {mascota.genero}</h3>
                 <h3>raza: {mascota.raza}</h3>
