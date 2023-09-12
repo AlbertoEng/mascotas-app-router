@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 
 const EditPage = () => {
@@ -22,7 +22,7 @@ const EditPage = () => {
             method: 'PUT',
             body: JSON.stringify({...mascota})
         })
-        const data = await resp.json();
+        await resp.json();
         navigate('/')
     }
 
