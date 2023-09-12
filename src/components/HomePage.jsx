@@ -80,7 +80,7 @@ const HomePage = () => {
                 }
             </div>
             <div className="container mt-3">
-                <div className="row gap-3">
+                <div className="row gap-3 d-flex justify-content-center">
                     {
                         selector === 'especie' && listaMascotas.map((mascota) => {
                             return mascota.especie === especie ? <div key={mascota.key} className="card p-0 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style={{ width: '18rem' }}>
